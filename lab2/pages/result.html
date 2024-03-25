@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What if?</title>
+    <style>
+        * {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: large;
+        }
+        main {
+            margin: 30px auto;
+            border: 2px double black;
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px grey;
+            width: 500px;
+        }
+        form {
+            margin-top: 30px;
+        }
+        form > #go_back:hover {
+            box-shadow: 2px 2px 5px grey;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <p>If you had invested your</p>
+        <p><b>{{ currency }}</b> resources in</p>
+        <p><b>{{ skin }}</b> skins</p>
+        <p>on <b>{{ info_date }}</b>, </p>
+        <p>you would have a profit</p>
+        <p>of <b>{{ income_percent }}%</b> now.</p>
+    </main>
+        
+    <form action="./">
+        <input id="go_back" type="submit" value="go back"/>
+    </form>
+</body>
+</html>

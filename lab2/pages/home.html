@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What if?</title>
+
+    <style>
+        * {
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #skin_crib {
+            margin: auto;
+            border: 2px dotted grey;
+            border-radius: 5px;
+            width: 600px;
+            overflow: hidden;
+        }
+        #skin_crib > ul {
+            list-style-type: none;
+        }
+        #my_form {
+            width: 600px;
+            margin: auto;
+            margin-top: 30px;
+            border: 2px double black;
+            border-radius: 5px;
+            padding-top: 10px; padding-bottom: 10px;
+        }
+        #my_form > * {
+            font-size: large;
+        }
+        #my_form > input {
+            border: 2px solid rgb(55, 55, 55);
+            border-radius: 2px;
+        }
+        #my_form > #skin {
+            width: 320px;
+        }
+        #my_form > #info_date {
+            padding-left: 7px; padding-right: 7px;
+        }
+        #currency {
+            margin-left: 10px;
+        }
+        #my_form > #next_button {
+            border-radius: 20px;
+            padding: 8px 20px;
+        }
+        #my_form > #next_button:hover {
+            box-shadow: 2px 2px 10px grey;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <h1>What if you invested in CS:GO (CS2) skins?</h1>
+
+        <div id="skin_crib">
+            <h3>Some examples of skins to copy-pasterino down below:</h3>
+            <ul>
+                <li>AK-47 | The Empress</li>
+                <li>★ Navaja Knife | Forest DDPAT</li>
+                <li>Nova | Green Apple</li>
+            </ul>
+        </div>
+    
+        <form id="my_form" action="/submit">
+            <label for="skin"><b>Skin name</b></label><br>
+            <input id="skin" name="skin" type="text"><br>
+            <p></p>
+    
+            <label for="info_date"><b>Date</b></label><br>
+            <input id="info_date" name="info_date" type="date" value="2019-03-20"><br>
+            <p></p>
+            
+            <label><b>Skin quality</b></label><br>
+            <input type="radio" id="factorynew" name="wear" value="Factory New" checked="y">
+            <label for="factorynew">Factory New</label><br>
+            <input type="radio" id="minimalwear" name="wear" value="Minimal Wear">
+            <label for="minimalwear">Minimal Wear</label><br>
+            <input type="radio" id="fieldtested" name="wear" value="Field-Tested">
+            <label for="fieldtested">Field-Tested</label><br>
+            <input type="radio" id="wellworn" name="wear" value="Well-Worn">
+            <label for="wellworn">Well-Worn</label><br>
+            <input type="radio" id="bttlescared" name="wear" value="Battle-Scarred">
+            <label for="bttlescared">Battle-Scarred</label><br>
+            <p></p>
+            
+            <label for="currency"><b>Your currency:</b></label>
+            <select id="currency" name="currency">
+                <option value="CHF">CHF Swiss Frank</option>
+                <option value="EUR">€ Euro</option>
+                <option value="JPY">¥ Japanese Yen</option>
+                <option value="PLN">zł Polish Złoty</option>
+                <option value="RUB">RUB Russian Ruble</option>
+                <option value="SEK">Skr Swedish Krona</option>
+                <option value="USD" selected="y">$ US Dollar</option>
+                <option value="GBP">£ British Pound Sterling</option>
+                
+                <option value="ETH">Ξ Ethereum</option>
+                <option value="BTC">₿ Bitcoin</option>
+            </select>
+            <p></p>
+
+            <input id="next_button" type="submit" value="See how much money you (would?) have forfeit!">
+        </form>
+    </main>
+
+</body>
+</html>
