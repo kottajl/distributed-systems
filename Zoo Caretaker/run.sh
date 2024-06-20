@@ -1,0 +1,1 @@
+python3 main.py 2181 /Applications/Minesweeper.app/Contents/MacOS/Minesweeper 2>/dev/null
