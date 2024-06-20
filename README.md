@@ -7,3 +7,4 @@ Different projects were made with usage of different frameworks, solutions and l
 - **CS:GO Skin Profit Analyzer** - RestAPI in Python
 - **Smart Home** - ZeroC Ice in Java and C#
 - **Hospital Communications** - RabbitMQ in Java
+- **Zoo Caretaker** - Zookeeper (using Kazoo library) in Python
